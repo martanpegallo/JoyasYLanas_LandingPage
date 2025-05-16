@@ -27,42 +27,337 @@
   </head>
   <body>
     <!-- header -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header class="header">
+      <nav
+        class="navbar navbar-expand-lg bg-dark border-bottom border-body"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <!-- Logo y nombre/lema -->
+          <div class="d-flex">
+            <a class="navbar-brand m-3 fs-1" href="#">
+              <i class="fa-solid fa-gem"></i>
+            </a>
+            <div>
+              <span class="navbar-brand m-1 h1 text-start fs-1"
+                >JOYAS Y LANAS CHILE</span
+              >
+              <h2>Plata Lapislazuli y Alpaca natural</h2>
+            </div>
+          </div>
+
+          <!-- Boton de menu colapsable -->
+          <button
+            class="navbar-toggler m-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link p-2" aria-current="page" href="#"
+                ><i class="fa-solid fa-house-flag p-2"></i>Inicio</a
+              >
+              <a class="nav-link p-2" href="#"
+                ><i class="fa-solid fa-heart p-2"></i>Nosotros</a
+              >
+              <a class="nav-link p-2" href="#"
+                ><i class="fa-solid fa-location-dot p-2"></i>Ubicacion</a
+              >
+              <a class="nav-link p-2" href="#"
+                ><i class="fa-solid fa-comment p-2"></i> Contacto</a
+              >
+            </div>
+          </div>
+          <!-- boton carrito de compras -->
+          <div class="d-flex">
+            <a
+              class="navbar-brand m-2 px-3 fs-2 border border-light-subtle rounded-2"
+              href="#"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- menu -->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">JOYAS Y LANAS CHILE</a>
+        <a class="navbar-brand" href="#">PRODUCTOS</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                >Colgantes</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
+              <a class="nav-link" href="#">Anillos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#">Aros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <!-- main -->
+    <main class="main">
+      <!-- filtro de busqueda -->
+      <div class="Filtro">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Ordenar por</option>
+          <option value="1">Ofertas</option>
+          <option value="2">Precio</option>
+          <option value="3">Tipo</option>
+        </select>
+      </div>
+      <!-- carta 1 -->
+      <div class="cards">
+        <div class="card m-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./assets/img/ANILLOSGRANDES.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fs-2">Anillos de plata y lapislazuli</h5>
+                <p class="card-text fs-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi ut recusandae deserunt debitis doloremque cum.
+                </p>
+                <button type="button" class="btn btn-outline-dark">
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- carta 2 -->
+      <div class="cards">
+        <div class="card m-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./assets/img/ANILLOSGRANDES.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fs-2">Anillos de plata y lapislazuli</h5>
+                <p class="card-text fs-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi ut recusandae deserunt debitis doloremque cum.
+                </p>
+                <button type="button" class="btn btn-outline-dark">
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- carta 3 -->
+      <div class="cards">
+        <div class="card m-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./assets/img/ANILLOSGRANDES.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fs-2">Anillos de plata y lapislazuli</h5>
+                <p class="card-text fs-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi ut recusandae deserunt debitis doloremque cum.
+                </p>
+                <button type="button" class="btn btn-outline-dark">
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- carta 4 -->
+      <div class="cards">
+        <div class="card m-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./assets/img/ANILLOSGRANDES.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fs-2">Anillos de plata y lapislazuli</h5>
+                <p class="card-text fs-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi ut recusandae deserunt debitis doloremque cum.
+                </p>
+                <button type="button" class="btn btn-outline-dark">
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- carta 5 -->
+      <div class="cards">
+        <div class="card m-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./assets/img/ANILLOSGRANDES.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fs-2">Anillos de plata y lapislazuli</h5>
+                <p class="card-text fs-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi ut recusandae deserunt debitis doloremque cum.
+                </p>
+                <button type="button" class="btn btn-outline-dark">
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- carta 6 -->
+      <div class="cards">
+        <div class="card m-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="./assets/img/ANILLOSGRANDES.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fs-2">Anillos de plata y lapislazuli</h5>
+                <p class="card-text fs-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi ut recusandae deserunt debitis doloremque cum.
+                </p>
+                <button type="button" class="btn btn-outline-dark">
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- paginacion -->
+      <div class="paginacion d-flex justify-content-center">
+        <nav aria-label="Page navigation example m-3 ">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </main>
 
     <!-- footer -->
     <footer class="pie">
-        
+      <div class="container m-0">
+        <div class="row">
+          <div class="col text-center">
+            <p>© 2023 Joyas y Lanas Chile. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container m-0">
+        <div class="row">
+          <div class="col text-center">
+            <a href="#" class="text-decoration-none text-light me-3"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="#" class="text-decoration-none text-light me-3"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="text-decoration-none text-light me-3"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="#" class="text-decoration-none text-light me-3"
+              ><i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
