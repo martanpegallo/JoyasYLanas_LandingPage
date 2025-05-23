@@ -1,3 +1,13 @@
+:root {
+  --text-color: whitesmoke;
+  --primary-color: #042553;
+  --secondary-color:#3b4c80;
+  --terciary-color:#2d0a00;
+  --background-color:#00002a;
+  --background-image:/assets/img/rocky-wall.png;
+  --accent-color:#533204;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,21 +26,126 @@ body {
   grid-template-columns: 100vw;
   grid-template-areas:
     "header"
+    "menu"
     "main"
     "pie";
+  background-color: var(--terciary-color);
+  background-image: var(--background-image);
+  color: var(--text-color);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Seccion logo y navegacion contenido */
+.navlogo {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  color: var(--text-color);
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo i {
+  padding: 10px;
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+.menusection {
+  display: none;
+}
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menusection ul{
+  list-style: none;
+}
+
+.menusection i {
+  padding: 10px;
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+
+/* seccion menu de productos */
+.menuproductos {
+  grid-area: menu;
+}
+
+/* Seccion main y cards productos */
+.main {
+  grid-area: main;
+}
+.cartasproductos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #232323;
-  color: whitesmoke;
+  color: var(--text-color);
   font-size: 1.5rem;
   line-height: 1.5;
   text-align: center;
 }
 
-.header {
-  grid-area: header;
-}
-.main {
-  grid-area: main;
-}
+/* Seccion footer */
 .pie {
   grid-area: pie;
+  background-color: var(--background-color);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  body {
+  grid-template-columns: 25% 75%;
+  grid-template-areas:
+    "header menu"
+    "header main"
+    "header pie";
+  }
+  .navlogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  }
+  .logo {
+  flex-direction: column;
+  padding: 20px;
+  }
+  .logo i {
+  padding: 20px;
+  font-size: 3rem;
+  color: var(--secondary-color);
+  }
+  .menusection {
+    display: block;
+    margin: 20px 0 20px 0;
+  }
+  .botoncolapsable {
+    display: none;
+  }
+
 }

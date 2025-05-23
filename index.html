@@ -26,97 +26,122 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!-- header -->
-    <header class="header">
-      <nav
-        class="navbar navbar-expand-lg bg-dark border-bottom border-body"
-        data-bs-theme="dark"
-      >
-        <div class="container-fluid">
-          <!-- Logo y nombre/lema -->
-          <div class="d-flex">
-            <a class="navbar-brand m-3 fs-1" href="#">
-              <i class="fa-solid fa-gem"></i>
-            </a>
-            <div>
-              <span class="navbar-brand m-1 h1 text-start fs-1"
-                >JOYAS Y LANAS CHILE</span
-              >
-              <h2>Plata Lapislazuli y Alpaca natural</h2>
-            </div>
-          </div>
-
-          <!-- Boton de menu colapsable -->
-          <button
-            class="navbar-toggler m-1"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNavAltMarkup"
-          >
-            <div class="navbar-nav">
-              <a class="nav-link p-2" aria-current="page" href="#"
-                ><i class="fa-solid fa-house-flag p-2"></i>Inicio</a
-              >
-              <a class="nav-link p-2" href="#"
-                ><i class="fa-solid fa-heart p-2"></i>Nosotros</a
-              >
-              <a class="nav-link p-2" href="#"
-                ><i class="fa-solid fa-location-dot p-2"></i>Ubicacion</a
-              >
-              <a class="nav-link p-2" href="#"
-                ><i class="fa-solid fa-comment p-2"></i> Contacto</a
-              >
-            </div>
-          </div>
-          <!-- boton carrito de compras -->
-          <div class="d-flex">
-            <a
-              class="navbar-brand m-2 px-3 fs-2 border border-light-subtle rounded-2"
-              href="#"
-            >
-              <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-          </div>
+    <!-- Seccion header y logo -->
+    <aside class="navlogo">
+      <!-- Seccion logo marca lema -->
+      <div class="logo">
+        <i class="fa-solid fa-gem"></i>
+        <div class="marcalema">
+          <h1 class="marca">JOYAS Y LANAS CHILE</h1>
+          <h4 class="lema">Plata Lapislazuli y Alpaca natural</h4>
         </div>
-      </nav>
-    </header>
+      </div>
+      <!-- Seccion menu hamburguesa -->
+      <div class="menusection">
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-house-flag"></i>Inicio</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-heart"></i>Nosotros</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-location-dot"></i>Ubicacion</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-comment"></i> Contacto</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Seccion botones -->
+      <div class="botones">
+        <div class="botoncolapsable">
+        <a
+          class="navbar-brand m-2 px-3 fs-2 border border-light-subtle rounded-2"
+          href="#"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        </div>
+        <div class="carrito">
+          <a
+          class="navbar-brand m-2 px-3 fs-2 border border-light-subtle rounded-2"
+          href="#"
+        >
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        </div>
+      </div>
+    </aside>
 
-    <!-- menu -->
+  <!-- Seccion menu productos -->
+  <nav class="menuproductos">    
     <nav class="navbar navbar-expand-sm bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">PRODUCTOS</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="navbar" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Colgantes</a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Colgantes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Anillos</a>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Anillos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Aros</a>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Aros
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -126,7 +151,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+                Textiles
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -140,10 +165,12 @@
         </div>
       </div>
     </nav>
+  </nav>
 
-    <!-- main -->
+
+    <!-- Seccion main -->
     <main class="main">
-      <!-- filtro de busqueda -->
+      <!-- Seccion filtro de busqueda -->
       <div class="Filtro">
         <select class="form-select" aria-label="Default select example">
           <option selected>Ordenar por</option>
@@ -152,9 +179,11 @@
           <option value="3">Tipo</option>
         </select>
       </div>
-      <!-- carta 1 -->
+      <!-- Seccion cartas de productos -->
+      <div class="cartasproductos">
+        <!-- carta 1 -->
       <div class="cards">
-        <div class="card m-3" style="max-width: 540px">
+        <div class="card m-3" style="max-width: 420px">
           <div class="row g-0">
             <div class="col-md-4">
               <img
@@ -166,11 +195,11 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title fs-2">Anillos de plata y lapislazuli</h5>
-                <p class="card-text fs-5">
+                <p class="card-text fs-6">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Commodi ut recusandae deserunt debitis doloremque cum.
                 </p>
-                <button type="button" class="btn btn-outline-dark">
+                <button type="button" class="btn btn-outline-light">
                   Agregar al carrito
                 </button>
               </div>
@@ -180,23 +209,23 @@
       </div>
       <!-- carta 2 -->
       <div class="cards">
-        <div class="card m-3" style="max-width: 540px">
+        <div class="card m-3" style="max-width: 420px">
           <div class="row g-0">
             <div class="col-md-4">
               <img
                 src="./assets/img/ANILLOSGRANDES.jpg"
                 class="img-fluid rounded-start"
                 alt="..."
-              />
+              />  
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title fs-2">Anillos de plata y lapislazuli</h5>
-                <p class="card-text fs-5">
+                <p class="card-text fs-6">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Commodi ut recusandae deserunt debitis doloremque cum.
                 </p>
-                <button type="button" class="btn btn-outline-dark">
+                <button type="button" class="btn btn-outline-light">
                   Agregar al carrito
                 </button>
               </div>
@@ -206,7 +235,7 @@
       </div>
       <!-- carta 3 -->
       <div class="cards">
-        <div class="card m-3" style="max-width: 540px">
+        <div class="card m-3" style="max-width: 420px">
           <div class="row g-0">
             <div class="col-md-4">
               <img
@@ -218,11 +247,11 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title fs-2">Anillos de plata y lapislazuli</h5>
-                <p class="card-text fs-5">
+                <p class="card-text fs-6">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Commodi ut recusandae deserunt debitis doloremque cum.
                 </p>
-                <button type="button" class="btn btn-outline-dark">
+                <button type="button" class="btn btn-outline-light">
                   Agregar al carrito
                 </button>
               </div>
@@ -232,7 +261,7 @@
       </div>
       <!-- carta 4 -->
       <div class="cards">
-        <div class="card m-3" style="max-width: 540px">
+        <div class="card m-3" style="max-width: 420px">
           <div class="row g-0">
             <div class="col-md-4">
               <img
@@ -244,11 +273,11 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title fs-2">Anillos de plata y lapislazuli</h5>
-                <p class="card-text fs-5">
+                <p class="card-text fs-6">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Commodi ut recusandae deserunt debitis doloremque cum.
                 </p>
-                <button type="button" class="btn btn-outline-dark">
+                <button type="button" class="btn btn-outline-light">
                   Agregar al carrito
                 </button>
               </div>
@@ -258,7 +287,7 @@
       </div>
       <!-- carta 5 -->
       <div class="cards">
-        <div class="card m-3" style="max-width: 540px">
+        <div class="card m-3" style="max-width: 420px">
           <div class="row g-0">
             <div class="col-md-4">
               <img
@@ -270,11 +299,11 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title fs-2">Anillos de plata y lapislazuli</h5>
-                <p class="card-text fs-5">
+                <p class="card-text fs-6">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Commodi ut recusandae deserunt debitis doloremque cum.
                 </p>
-                <button type="button" class="btn btn-outline-dark">
+                <button type="button" class="btn btn-outline-light">
                   Agregar al carrito
                 </button>
               </div>
@@ -284,7 +313,7 @@
       </div>
       <!-- carta 6 -->
       <div class="cards">
-        <div class="card m-3" style="max-width: 540px">
+        <div class="card m-3" style="max-width: 420px">
           <div class="row g-0">
             <div class="col-md-4">
               <img
@@ -296,11 +325,11 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title fs-2">Anillos de plata y lapislazuli</h5>
-                <p class="card-text fs-5">
+                <p class="card-text fs-6">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Commodi ut recusandae deserunt debitis doloremque cum.
                 </p>
-                <button type="button" class="btn btn-outline-dark">
+                <button type="button" class="btn btn-outline-light">
                   Agregar al carrito
                 </button>
               </div>
@@ -308,6 +337,8 @@
           </div>
         </div>
       </div>
+      </div>
+      
       <!-- paginacion -->
       <div class="paginacion d-flex justify-content-center">
         <nav aria-label="Page navigation example m-3 ">
@@ -330,7 +361,7 @@
       </div>
     </main>
 
-    <!-- footer -->
+    <!-- Seccion footer y rs -->
     <footer class="pie">
       <div class="container m-0">
         <div class="row">
